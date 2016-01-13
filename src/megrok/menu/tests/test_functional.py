@@ -13,9 +13,9 @@ As an anonymous user, we only see the unprotected menu items:
 
   >>> newInteraction(Participation(Principal('zope.anybody')))
   >>> request = TestRequest()
-  
+
   >>> page = getMultiAdapter((manfred, TestRequest()), name='showmenu')
-  >>> print page()  
+  >>> print page()
   [{'action': '',
     'description': '',
     'extra': None,
@@ -174,7 +174,7 @@ class Manage(View):
         return 'manage'
 
 
-#Sub menus item are also available to be protected using a permission
+# Sub menus item are also available to be protected using a permission
 class Setup(megrok.menu.SubMenuItem):
     require(ManageStuff)
     name('setup')
@@ -199,7 +199,7 @@ class ShowMenu(View):
 
 
 def test_suite():
-    from zope.testing import doctest
+    import doctest
     suite = doctest.DocTestSuite()
     suite.layer = megrok.menu.tests.MegrokMenuLayer(megrok.menu.tests)
     return suite

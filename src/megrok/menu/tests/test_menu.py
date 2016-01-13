@@ -76,7 +76,7 @@ class Edit(View):
 
 
 def test_suite():
-    from zope.testing import doctest
+    import doctest
     suite = doctest.DocTestSuite()
     suite.layer = megrok.menu.tests.MegrokMenuLayer(megrok.menu.tests)
     return suite

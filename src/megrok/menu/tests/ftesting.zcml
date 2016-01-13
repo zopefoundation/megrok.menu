@@ -9,12 +9,12 @@
   <include package="zope.principalregistry" file="meta.zcml" />
   <include package="grokcore.view" file="meta-minimal.zcml" />
   <include package="megrok.menu" file="meta.zcml" />
-  
+
   <include package="zope.security" />
   <include package="zope.securitypolicy" />
   <include package="zope.principalregistry" />
   <include package="grokcore.view" />
- 
+
   <grok:grok package="megrok.menu.tests" />
 
   <securityPolicy
