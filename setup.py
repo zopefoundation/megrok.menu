@@ -6,7 +6,7 @@ long_description = (
 test_requires = []
 
 setup(name='megrok.menu',
-      version='0.5dev',
+      version='0.4.1',
       description="Grok extension to configure browser menus",
       long_description=long_description,
       keywords='',
