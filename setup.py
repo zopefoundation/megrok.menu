@@ -42,7 +42,7 @@ setup(name='megrok.menu',
       classifiers=[
           'Programming Language :: Python',
           'Environment :: Web Environment',
-          'Framework :: Zope3',
+          'Framework :: Zope :: 3',
           'License :: OSI Approved :: Zope Public License',
           ],
       )
